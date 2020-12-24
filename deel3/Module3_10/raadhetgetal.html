@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        const answer = Math.floor(Math.random() * 25 + 1);
+        const question1 = prompt("Welkom! Wat is je naam?");
+        alert('Hallo ' + question1 + ', prettig kennis te maken');
+
+        for (let turns = 1; turns <= 5; turns++) {
+            const question2 = prompt("Raad het getal tussen 0 en 25");
+            const guess = parseInt(question2);
+
+            if (answer == guess) {
+                alert('Gefeliciteerd! Je hebt het goed geraden. (' + turns + '/5)');
+            } else {
+                alert('Nope, niet het juiste nummer! (' + turns + '/5)');
+            }
+            if (turns == 5) {
+                alert('Game over! Je beurten zijn op!');
+            }
+        }
+    </script>
+</body>
+
+</html>

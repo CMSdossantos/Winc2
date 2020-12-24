@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,500,700");
+$primcolor: #97d279;
+$seccollor: #c0eea9;
+$tertcollor: #ecffe9;
+$textcollor: #090b08;
+$standaardpad: 20px;
+
+@mixin textblok{
+  max-width: 700px;
+  text-align: center;
+  padding: $standaardpad;
+}

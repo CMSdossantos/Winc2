@@ -1,0 +1,36 @@
+
+.deel1:hover {
+    color: lightblue;
+    font-weight: bold;
+}
+
+.deel1:nth-child(2):active {
+    color: red;
+    font-style: italic;
+}
+
+.deel1:nth-child(3):visited {
+    color: yellow;
+
+}
+
+.deel1:focus {
+    color: green;
+    font-size: 20px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    background-color: royalblue;
+}
+
+.currentPage{
+    background: rgb(60, 74, 121);
+}
+.deel2:focus {
+    border: 3px solid aqua;
+}

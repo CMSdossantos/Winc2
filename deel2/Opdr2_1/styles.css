@@ -1,0 +1,16 @@
+
+body{
+    background-color: #bff9ff;
+    font-family: 'Courier New', Courier, monospace;
+}
+.black-border {
+    border: 5px solid black;
+}
+
+#green-background{
+    background-color: #1cd4e8;
+}
+
+ul{
+    color: blue;
+}

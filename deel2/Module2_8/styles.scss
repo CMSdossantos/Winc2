@@ -1,0 +1,220 @@
+@import "constants";
+
+/* Global */
+* {
+  box-sizing: border-box;
+}
+body {
+  color:$textcollor;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  background-color: $tertcollor;
+}
+h1 {
+  font-size: 1.7em;
+  font-weight: 700;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+h2 {
+  text-transform: uppercase;
+}
+h4 {
+  font-size: 0.8em;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+h6 {
+  font-weight: 500;
+}
+a {
+  text-decoration: none;
+  color: $textcollor;
+}
+ul {
+  list-style: none;
+}
+.btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  border: solid 1px #000;
+  transition: all 0.3s ease-in;
+}
+.btn:hover,
+.btn:focus {
+  transform: translate(0px, -2px);
+  -webkit-box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
+  transition: all 0.3s ease-out;
+}
+form {
+  display: flex;
+}
+form input:first-child {
+  flex: 1 0 80%;
+  background-color: transparent;
+}
+form input:last-child {
+  flex: 1 0 20%;
+  border-left: 0;
+  cursor: pointer;
+  background-color: $seccollor;
+  transition: all 0.25s ease;
+}
+#submit:hover {
+  background-color: #000;
+  color: #fff;
+  transition: all 0.25s ease;
+  -webkit-box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
+}
+input {
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+/* Pas alleen de onderstaande regels aan */
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  padding: $standaardpad;
+  background-color: $seccollor;
+  height: 120px;
+  -webkit-box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
+
+  &__brand-logo__img {
+  width: auto;
+  padding-top: 20px;
+  height: 7.5em;
+  }
+}
+
+
+
+.title {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-bottom: 1em;
+  border: 1px solid red;
+}
+.title.title-right {
+  justify-content: flex-end;
+
+}
+.line {
+  width: 3em;
+  height: 1px;
+  background-color: #000;
+  margin-right: 1em; 
+}
+.line.line-right {
+  order: 2;
+  margin-right: 0;
+  margin-left: 1em;
+}
+
+/* Hero Section */
+.hero {
+  padding: $standaardpad;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  background: $primcolor;
+}
+
+.hero__hero-img__img {
+  display: block;
+  height: auto;
+  width: 15.5em;
+}
+.hero__hero-text {
+  @include textblok;
+}
+
+/* Featured Section */
+.featured {
+  padding: $standaardpad;
+}
+.featured__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.featured__wrapper__image {
+  width: 300px;
+}
+
+.featured__wrapper__text-featured {
+  @include textblok;
+}
+
+.featured__wrapper__text-featured p {
+  text-align: justify;
+  padding: $standaardpad;
+  line-height: 1.4em;
+}
+
+/* About Section */
+
+.about__wrapper__text-about {
+  @include textblok;
+}
+.about__wrapper__text-about p {
+  text-align: justify;
+  padding-bottom: 1em;
+  line-height: 1.4em;
+}
+.about {
+  background-color: $primcolor;
+  padding: $standaardpad;
+}
+.about__wrapper {
+  display: flex;
+}
+
+.about__wrapper__video-wrapper {
+  position: relative;
+  padding-bottom: 33.25%;
+  overflow: hidden;
+  align-self: center;
+  flex: 2 0 55%;
+  margin: 1.4em 0;
+}
+
+.about__wrapper__video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Contact Section */
+.contact {
+  padding: $standaardpad; 
+}
+.wrapper .contact {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact__wrapper__form-wrapper {
+  padding: $standaardpad; 
+}
+
+.contact__wrapper__copy-wrapper {
+  padding-left: $standaardpad;
+}

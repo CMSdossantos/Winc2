@@ -1,0 +1,47 @@
+body {
+  background: #c3cfe2;
+}
+
+.mediaSideBar {
+  right: -87px;
+  top: 50%;
+  position: fixed;
+  transform: translateY(-50%);
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 800;
+}
+.mediaSideBar i {
+  color: white;
+  padding: 13px;
+}
+.mediaSideBar div {
+  min-width: 130px;
+}
+.mediaSideBar div a {
+  text-decoration: none;
+  color: white;
+}
+.mediaSideBar div:hover {
+  transition: 0.5s;
+  margin-left: -87px;
+}
+
+.social-blog {
+  background-color: #e17b77;
+}
+
+.social-facebook {
+  background-color: #3b5998;
+}
+
+.social-twitter {
+  background-color: #00aced;
+}
+
+.social-linkedin {
+  background-color: #007bb6;
+}
+
+.social-github {
+  background-color: #333;
+}

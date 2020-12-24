@@ -1,0 +1,30 @@
+
+body{
+    background-color: #bff9ff;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.black-border {
+    border: 5px solid grey;
+    margin: 5px;
+    padding: 5px;
+}
+
+#green-background{
+    background-color: #1cd4e8;
+}
+
+ul{
+    color: blue;
+    margin: auto;
+}
+
+nav li{ 
+    list-style-type: none;
+    display: inline;
+    margin: 5px;
+    background-color: rgb(132, 218, 252);
+    border: 1px solid black;
+    
+}

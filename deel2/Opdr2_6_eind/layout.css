@@ -1,0 +1,133 @@
+body {
+     margin: 0;
+     padding-top: 0.5vh;
+     background-color: rgb(116, 142, 199);
+}
+
+#container {
+    display: grid;
+    height: 100vh;
+    grid-template: 0.5fr 0.1fr 8fr 0.5fr / 1fr;
+    font-family: 'Asap Condensed', sans-serif;
+    color: ivory;  
+}
+
+#nav_area {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#nav_area > a { 
+    border: 1px solid blue;
+    color: white;
+    flex-grow: 1;
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: rgb(5, 0, 75);
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+#nav_area > a.active {
+    border-bottom: 1px solid rgba(0, 0, 255, 0);
+}
+
+#nav_area > a:hover {
+    background-color: rgb(49, 121, 253);
+}
+
+a:visited {
+    color: black;
+    text-decoration-line: none;
+}
+
+#mainlayout {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    align-items: left;
+    font-size: 0.5rem;
+    place-items: center;
+    overflow: scroll;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/000/677/302/non_2x/abstract-technology-banner-background.jpg");
+    background-size: cover;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.parts:nth-child(1n+2) {
+    border-left: 1px solid blue;
+    border-right: 1px solid blue;
+}
+
+.sub_parts, form {
+    background-color: rgba(43, 68, 148, 0.459);
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+    width: 80%;
+    font-size: 1rem;
+}
+
+.sub_parts > * {
+    margin: 0.5em;
+    align-self: flex-start;
+}
+
+.sub_parts > img{
+    width: 30%;
+}
+
+ul {
+    width: 50%;
+    list-style-type: none;
+    padding: 5px;
+}
+
+input {
+    width: 100%;
+}
+textarea {
+    width: 97%;
+}
+
+footer,header {
+    background-image: linear-gradient(-180deg, rgb(5, 0, 75), black);
+    text-align: center;
+}
+
+footer {
+    font-size: 0.5rem;
+}
+
+#show2 {
+    display: none;
+}
+
+
+@media (min-width: 1024px) {
+    #mainlayout {
+        font-size: 0.7rem;
+        line-height: 1.2rem;
+    }
+
+    .sub_parts {
+        width: 50%;
+        flex-direction: row;
+    }
+
+    #nav_area > a {
+        font-size: 0.9em;
+    }
+    #show1 {
+        display: none;
+    }
+    #show2 {
+        display: flex;
+    }
+}
+    
